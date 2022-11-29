@@ -9,8 +9,3 @@ type UserCreateRequest struct {
 	ModifiedAt string `json:"modified_at"`
 	UserType   string `json:"user_type"`
 }
-
-// UserGetByIDRequest ...
-type UserGetByIDRequest struct {
-	UserID string `json:"user_id"`
-}

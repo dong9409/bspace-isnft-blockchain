@@ -24,6 +24,21 @@ const AuthApi = {
       return false;
     }
   },
+
+  signUpBlockchain: async (userInfo: JoinInfo) => {
+    try {
+      const url: any = ApiConstant.SIGN_UP_USER;
+      const { status, data } = await http.post("http://localhost:4001/signup", userInfo);
+      if (status === 200) {
+        return data;
+      }
+      throw data;
+    } catch (e) {
+      console.error(e);
+      return false;
+    }
+  },
+
   /**
    * 로그인
    * --
@@ -34,6 +49,20 @@ const AuthApi = {
     try {
       const url: any = ApiConstant.SIGN_IN_USER;
       const { status, data } = await http.post(url, userInfo);
+      if (status === 200) {
+        return data;
+      }
+      throw data;
+    } catch (e) {
+      console.error(e);
+      return false;
+    }
+  },
+
+  signInUserBlockchain: async (userInfo: LoginInfo) => {
+    try {
+      const url: any = ApiConstant.SIGN_IN_USER;
+      const { status, data } = await http.post("http://localhost:4001/signin", userInfo);
       if (status === 200) {
         return data;
       }

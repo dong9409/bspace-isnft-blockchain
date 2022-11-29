@@ -162,3 +162,15 @@
 {"level":"info","message":"listening....","timestamp":"2022-11-30 00:59:13"}
 {"level":"info","message":"function :","timestamp":"2022-11-30 00:59:13"}
 {"level":"info","message":{"approved":"","owner":"x509::CN=test14,OU=client+OU=btp+OU=example+OU=com+OU=user::CN=ca.btp.example.com,OU=btp,O=btp.example.com,L=San Francisco,ST=California,C=KR","tokenId":"125e6974-d47a-47b8-9930-9cf281c67ad7","tokenURI":"QmQD87NDJ8tNqr1Z6ZTfjN1SWkXobo2FThA4dMF3BjCLCm"},"timestamp":"2022-11-30 00:59:13"}
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-blockchain/isnft-agent/wallet","timestamp":"2022-11-30 01:47:49"}
+{"level":"info","message":"-----BEGIN CERTIFICATE-----\nMIICDjCCAbSgAwIBAgIUUQfK1jkT0JS0aQjDpcQJsqXArNQwCgYIKoZIzj0EAwIw\nfzELMAkGA1UEBhMCS1IxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNh\nbiBGcmFuY2lzY28xGDAWBgNVBAoTD2J0cC5leGFtcGxlLmNvbTEMMAoGA1UECxMD\nYnRwMRswGQYDVQQDExJjYS5idHAuZXhhbXBsZS5jb20wHhcNMjIxMTI5MTY0MzAw\nWhcNMjMxMTI5MTY0ODAwWjAhMQ8wDQYDVQQLEwZjbGllbnQxDjAMBgNVBAMTBWFk\nbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEQjy8MXXy61Rg+H/nTnlnP7+i\nsqIiRyCAsOm5MMwETc/dImQuR0zHx8S6BnjyhI01B57ilEE07o1xxu4J2AQGD6Ns\nMGowDgYDVR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFHAuOK3Y\nwOn7XmIw7AXXJ/1VWbyMMCsGA1UdIwQkMCKAIIJsL5BhLYVrFgsRfnPVyNMqrdqN\ngUkCIPQ1SYJHvndiMAoGCCqGSM49BAMCA0gAMEUCIQD8ZGOYnZbC7adlGFgGrRkP\nfepzPbZi2RXdOQAUJHtPTgIgYXWNO8bl7ciWdue37UMlTPsKYrUicMYR/WqnS60r\nCMg=\n-----END CERTIFICATE-----\n","timestamp":"2022-11-30 01:47:50"}
+{"level":"info","message":"Successfully enrolled admin user \"admin\" and imported it into the wallet","timestamp":"2022-11-30 01:47:50"}
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-blockchain/isnft-agent/wallet","timestamp":"2022-11-30 01:47:50"}
+{"level":"info","message":"identity: ","timestamp":"2022-11-30 01:47:50"}
+{"level":"info","message":"Successfully registered and enrolled admin user test14 and imported it into the wallet","timestamp":"2022-11-30 01:47:50"}
+{"level":"info","message":"-api listening on port 4000!","timestamp":"2022-11-30 01:47:51"}
+{"level":"info","message":"connect시 identityLabel: test14","timestamp":"2022-11-30 01:47:51"}
+{"level":"info","message":"listening....","timestamp":"2022-11-30 01:50:00"}
+{"level":"info","message":"function :","timestamp":"2022-11-30 01:50:00"}
+{"level":"info","message":{"approved":"","owner":"x509::CN=test14,OU=client+OU=btp+OU=example+OU=com+OU=user::CN=ca.btp.example.com,OU=btp,O=btp.example.com,L=San Francisco,ST=California,C=KR","tokenId":"6b21594a-4bae-456d-92ee-06684cafb4dc","tokenURI":"QmaCEe4Kvuxepfy7YwqfyRzV7SxCvrxPDCaKksmffnMdnK"},"timestamp":"2022-11-30 01:50:00"}
+{"level":"error","message":"Caught interrupt signal - start disconnect from the gateway","timestamp":"2022-11-30 01:50:24"}

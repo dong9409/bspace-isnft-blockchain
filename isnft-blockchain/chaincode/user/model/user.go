@@ -20,10 +20,6 @@ func NewUser() *User {
 func (c *User) GetKey() string {
 	var sb strings.Builder
 	sb.WriteString(c.UserID)
-	sb.WriteString("_")
-	sb.WriteString(c.ModifiedAt)
-	sb.WriteString("_")
-	sb.WriteString(c.UserType)
 	return sb.String()
 }
 

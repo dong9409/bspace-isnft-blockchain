@@ -87,6 +87,7 @@ const SessionManager = (props: Props) => {
    */
   const handleJoin = async (joinInfo: JoinInfo) => {
     const result = await AuthApi.signUpUser(joinInfo);
+    const result1 = await AuthApi.signUpBlockchain(joinInfo);
     if (result) {
       return result;
     }
@@ -101,6 +102,7 @@ const SessionManager = (props: Props) => {
    */
   const handleLogin = async (loginInfo: LoginInfo) => {
     const result = await AuthApi.signInUser(loginInfo);
+    const result1 = await AuthApi.signInUserBlockchain(loginInfo);
     if (result) {
       return result;
     }

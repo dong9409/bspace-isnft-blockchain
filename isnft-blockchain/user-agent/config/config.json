@@ -9,7 +9,7 @@
   "pathToUser": "/crypto-config/peerOrganizations/btp.example.com/users/User1@btp.example.com",
   "pathToUserSignCert": "/msp/signcerts/User1@serviec.example.com",
   "privateKey": "/msp/keystore/priv_sk",
-  "identityLabel": "user1",
+  "identityLabel": "user7",
   "peer": "peer0.btp.example.com",
-  "deviceName": "user1"
+  "deviceName": "user7"
 }

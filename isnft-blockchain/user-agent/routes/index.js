@@ -1,7 +1,7 @@
 const express = require("express");
-const erc721Request = require('./erc721/erc721Request');
+const userRequest = require('./user/userRequest');
 const app = express();
 
-app.use('/', erc721Request.router);
+app.use('/', userRequest.router);
 
 module.exports.app = app;
