@@ -1,2 +1,3 @@
-blockchain/build/
-node_modules/
+isnft-blockchain/playground/blockchain/build/
+isnft-frontend/node_modules/
+isnft-backend/node_modules/
