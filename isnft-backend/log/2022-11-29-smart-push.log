@@ -6,3 +6,5 @@
 {"level":"info","message":"Successfully registered and enrolled admin user test5 and imported it into the wallet","timestamp":"2022-11-29 11:11:21"}
 {"level":"info","message":"-api listening on port undefined!","timestamp":"2022-11-29 11:11:21"}
 {"level":"info","message":"connect시 identityLabel: test5","timestamp":"2022-11-29 11:11:21"}
+{"level":"info","message":"Wallet path: /home/iot/go/src/github.com/bspace-isnft-blockchain/isnft-backend/wallet","timestamp":"2022-11-29 13:48:56"}
+{"level":"error","message":"Failed to enroll admin user \"admin\": Error: Calling enroll endpoint failed with error [Error: connect ECONNREFUSED 127.0.0.1:7054]","timestamp":"2022-11-29 13:48:56"}

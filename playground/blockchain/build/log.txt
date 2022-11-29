@@ -1,0 +1,1 @@
+Error: failed to read chaincode package at '/etc/hyperledger/fabric/chaincodes/erc721-1.0.tar.gz': open /etc/hyperledger/fabric/chaincodes/erc721-1.0.tar.gz: no such file or directory

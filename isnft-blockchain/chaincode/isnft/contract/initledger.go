@@ -10,8 +10,8 @@ import (
 
 //InitLedger ...
 func (ic *IsNFTChaincode) InitLedger(ctx contractapi.TransactionContextInterface) error {
-	var initData = model.IsNFTData{
-		"lwm2m", "data1", "initSensor", "from", "to", "time1",
+	var initData = model.Content{
+		"isnft", "id1", "title1", "desc1", "event1", "url1", "width1", "height1", "address1",
 	}
 	initDataAsBytes, err := json.Marshal(initData)
 	ctx.GetStub().PutState("init", initDataAsBytes)

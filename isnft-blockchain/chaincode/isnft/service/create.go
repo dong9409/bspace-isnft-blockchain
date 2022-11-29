@@ -11,35 +11,17 @@ import (
 )
 
 // Create ...
-func Create(ctx contractapi.TransactionContextInterface, lcr request.IsNFTDataCreateRequest) error {
-	isNFTModel := model.NewIsNFTData()
+func Create(ctx contractapi.TransactionContextInterface, ccr request.ContentCreateRequest) error {
+	isNFTModel := model.NewContent()
 	isNFTModel.SetDoctype("IsNFT")
-	isNFTModel.SetData(lcr.Data)
-	isNFTModel.SetSensor(lcr.Sensor)
-	isNFTModel.SetFrom(lcr.From)
-	isNFTModel.SetTo(lcr.To)
-	isNFTModel.SetTime(lcr.Time)
-
-	if isNFTModel.GetData() == "" {
-		logger.Error("There is no [data]")
-		return errors.New("There is no [data]")
-	}
-	if isNFTModel.GetSensor() == "" {
-		logger.Error("There is no [sensor]")
-		return errors.New("There is no [sensor]")
-	}
-	if isNFTModel.GetFrom() == "" {
-		logger.Error("There is no [from]")
-		return errors.New("There is no [from]")
-	}
-	if isNFTModel.GetTo() == "" {
-		logger.Error("There is no [to]")
-		return errors.New("There is no [to]")
-	}
-	if isNFTModel.GetTime() == "" {
-		logger.Error("There is no [time]")
-		return errors.New("There is no [time]")
-	}
+	isNFTModel.SetUserID(ccr.UserID)
+	isNFTModel.SetContentTitle(ccr.ContentTitle)
+	isNFTModel.SetContentDESC(ccr.ContentDESC)
+	isNFTModel.SetEventList(ccr.EventList)
+	isNFTModel.SetContentURL(ccr.ContentURL)
+	isNFTModel.SetContentWidth(ccr.ContentWidth)
+	isNFTModel.SetContentHeight(ccr.ContentHeight)
+	isNFTModel.SetNftAddress(ccr.NftAddress)
 
 	result, err := json.Marshal(isNFTModel)
 	if err != nil {

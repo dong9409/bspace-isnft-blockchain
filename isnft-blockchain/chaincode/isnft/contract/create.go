@@ -11,21 +11,21 @@ import (
 )
 
 // CreateIsNFTData is method to create post for board
-func (ic *IsNFTChaincode) CreateIsNFTData(ctx contractapi.TransactionContextInterface, rawIsNFTCreateRequest string) *response.ChaincodeResponse {
-	var IsNFTCreateRequest request.IsNFTDataCreateRequest
+func (ic *IsNFTChaincode) CreateIsNFTData(ctx contractapi.TransactionContextInterface, rawContentCreateRequest string) *response.ChaincodeResponse {
+	var ContentCreateRequest request.ContentCreateRequest
 
 	chaincodeResponse := response.ChaincodeResponse{
-		ChaincodeResult: rawIsNFTCreateRequest,
+		ChaincodeResult: rawContentCreateRequest,
 	}
 
-	err := json.Unmarshal([]byte(rawIsNFTCreateRequest), &IsNFTCreateRequest)
+	err := json.Unmarshal([]byte(rawContentCreateRequest), &ContentCreateRequest)
 	if err != nil {
 		chaincodeResponse.Status = "not available DTO"
 		chaincodeResponse.StatusCode = http.StatusInternalServerError
 		return &chaincodeResponse
 	}
 
-	err = IsNFTService.Create(ctx, IsNFTCreateRequest)
+	err = IsNFTService.Create(ctx, ContentCreateRequest)
 	if err != nil {
 		chaincodeResponse.Status = err.Error()
 		chaincodeResponse.StatusCode = http.StatusInternalServerError
