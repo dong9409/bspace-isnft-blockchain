@@ -2,7 +2,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package chaincode
+package contract
 
 // Define structs to be used by chaincode
 type Nft struct {

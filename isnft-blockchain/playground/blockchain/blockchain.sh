@@ -50,8 +50,8 @@ function blockchain_channel_join {
     ORG_NAME=$1
     CHANNEL=$2
     command "docker exec -it \
-    cli.$PEER_NAME \
-    peer channel join -b /etc/hyperledger/fabric/block/tester-channel.block"
+    cli.peer0.$ORG_NAME.example.com \
+    peer channel join -b /etc/hyperledger/fabric/block/$CHANNEL.block"
 }
 
 function blockchain_chaincode_package {
@@ -92,11 +92,12 @@ function blockchain_chaincode_approveformyorg {
     command "docker exec -it \
     cli.$PEER_NAME \
     peer lifecycle chaincode approveformyorg \
-    --channelID tester-channel \
-    --name erc721 \
-    --version 1.0 \
+    --channelID $CHANNEL_NAME \
+    --name $CHAINCODE_NAME \
+    --version $VERSION \
     --package-id $PACKAGE_ID \
-    --sequence 1 \
+    --collections-config $CHAINCODE_DIR/collections_config.json
+    --sequence $SEQUENCE \
     $GLOBAL_FLAGS"
 }
 
@@ -109,8 +110,8 @@ function blockchain_chaincode_checkcommitreadiness {
     command "docker exec -it \
     cli.$PEER_NAME \
     peer lifecycle chaincode checkcommitreadiness \
-    --channelID tester-channel \
-    --name erc721 \
+    --channelID $CHANNEL_NAME \
+    --name $CHAINCODE_NAME \
     --version $VERSION \
     --sequence $SEQUENCE \
     $GLOBAL_FLAGS"
@@ -125,9 +126,10 @@ function blockchain_chaincode_commit {
     command "docker exec -it \
     cli.$PEER_NAME \
     peer lifecycle chaincode commit \
-    --channelID tester-channel \
-    --name erc721 \
+    --channelID $CHANNEL_NAME \
+    --name $CHAINCODE_NAME \
     --version $VERSION \
+    --collections-config $CHAINCODE_DIR/collections_config.json
     --sequence $SEQUENCE \
     $GLOBAL_FLAGS"
 }
@@ -157,22 +159,11 @@ function blockchain_chaincode_init {
 }
 
 function blockchain_all {
-    BTP_PEER="peer0.btp.example.com"
     INCLUDE_CA=$1
     blockchain_build
     blockchain_up $INCLUDE_CA
     blockchain_channel
     blockchain_chaincode
-
-    PEER_NAME="peer1.btp.example.com"
-    BTP_PEER="peer1.btp.example.com"
-    CHAINCODE="erc721"
-    VERSION="1.0"
-    blockchain_channel_join
-    blockchain_chaincode_package $BTP_PEER $CHAINCODE $VERSION
-    blockchain_chaincode_install $BTP_PEER $CHAINCODE $VERSION
-    # blockchain_chaincode_package $BTP_PEER $CHAINCODE $VERSION
-    # blockchain_chaincode_install $BTP_PEER $CHAINCODE $VERSION
 }
 
 function blockchain_clean {
@@ -235,6 +226,7 @@ function blockchain_chaincode {
                 blockchain_chaincode_checkcommitreadiness $BTP_PEER $CHANNEL $CHAINCODE $VERSION $SEQUENCE
                 blockchain_chaincode_commit $BTP_PEER $CHANNEL $CHAINCODE $VERSION $SEQUENCE
                 blockchain_chaincode_querycommitted $CHANNEL
+                blockchain_chaincode_init $CHANNEL $CHAINCODE
             fi
         done
     done

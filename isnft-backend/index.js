@@ -15,8 +15,8 @@ app.use(
 
 app.use('/chaincode/test-api', router.app);
 
-app.listen(process.env.PORT, () => {
-    logger.info(`-api listening on port ${process.env.PORT}!`);
+app.listen(3333, () => {
+    logger.info(`-api listening on port ${3333}!`);
 });
 
 process.on("SIGINT", async() => {

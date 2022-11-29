@@ -1,4 +1,4 @@
-package chaincode
+package contract
 
 import (
 	"encoding/base64"
@@ -54,6 +54,12 @@ func _nftExists(ctx contractapi.TransactionContextInterface, tokenId string) boo
 	}
 
 	return len(nftBytes) > 0
+}
+
+//InitLedger ...
+func (ic *TokenERC721Contract) InitLedger(ctx contractapi.TransactionContextInterface) error {
+
+	return nil
 }
 
 // BalanceOf counts all non-fungible tokens assigned to an owner

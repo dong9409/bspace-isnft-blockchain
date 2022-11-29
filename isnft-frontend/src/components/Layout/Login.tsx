@@ -196,16 +196,6 @@ const Login = (props: Props) => {
           </Button>
         </form>
       </div>
-      <Divider plain>Or</Divider>
-      <Button
-        icon={<img className="metamask" src={METAMASK} alt="metamask" />}
-        size="large"
-        className="form"
-        shape="round"
-        onClick={metamaskLogin}
-      >
-        {loginText}
-      </Button>
       <div className="sns-list"></div>
     </div>
   );
