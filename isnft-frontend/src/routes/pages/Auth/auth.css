@@ -1,0 +1,8 @@
+.auth-container{
+    width: 50%;
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

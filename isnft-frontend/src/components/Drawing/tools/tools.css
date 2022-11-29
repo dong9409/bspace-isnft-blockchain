@@ -1,0 +1,40 @@
+.tools-box{
+    width: 80vw;
+    height: 100px;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 10px;
+    left: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: width 1s;
+}
+
+
+.tools-box .tool{
+    width: 64px;
+    height: 64px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.tools-box .tool .tool-icon{
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+
+.tools-box .weight-input{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+}

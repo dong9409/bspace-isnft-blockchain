@@ -1,0 +1,67 @@
+.layout-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.layout-container .layout-header {
+    width: 100%;
+    height: 7vh;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.layout-container .layout-header .logo-wrapper {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.layout-container .layout-header .metasheet{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.layout-container .layout-header .metasheet .user-profile{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.layout-container .layout-header .metasheet .user-profile .login-btn{
+    cursor: pointer;
+}
+
+.layout-container .layout-header .metasheet .user-profile .user-avatar{
+    width: 32px;
+    height: 32px;
+    padding: 3%;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.layout-container .layout-content {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

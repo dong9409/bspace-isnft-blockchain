@@ -1,0 +1,20 @@
+.drawing-container {
+    width: 100%;
+    height: 100%;
+}
+
+.drawing-log{
+    width: 100px;
+    height: 80vh;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    position: fixed;
+    top: 10vh;
+    right: 10px;
+}
+
+.tscanvas{
+    /* cursor: crosshair; */
+    /* cursor: crosshair; */
+    cursor: url('eraser.svg') crosshair;
+}

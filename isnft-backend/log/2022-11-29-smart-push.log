@@ -1,0 +1,8 @@
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-backend/wallet","timestamp":"2022-11-29 11:11:20"}
+{"level":"info","message":"-----BEGIN CERTIFICATE-----\nMIICDjCCAbSgAwIBAgIUGBM8ZYOq6AqVEDaDCSLj/JcGxHkwCgYIKoZIzj0EAwIw\nfzELMAkGA1UEBhMCS1IxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNh\nbiBGcmFuY2lzY28xGDAWBgNVBAoTD2J0cC5leGFtcGxlLmNvbTEMMAoGA1UECxMD\nYnRwMRswGQYDVQQDExJjYS5idHAuZXhhbXBsZS5jb20wHhcNMjIxMTI5MDIwNjAw\nWhcNMjMxMTI5MDIxMTAwWjAhMQ8wDQYDVQQLEwZjbGllbnQxDjAMBgNVBAMTBWFk\nbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEzA+2m6RKrHk0tYYONllyKzj+\n7MkRBWilxe7LBb3a5/yKYoYZ03c3ewVfySxDFAhlTI+3JZi4hDG9yOdpgWnzPqNs\nMGowDgYDVR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFIVQjUGt\nuXUnhonligZin7+kOqFcMCsGA1UdIwQkMCKAIA+9tyus0j5sEM74dL+BcwCxws3e\n5QDZ8BP8UOOH4aa9MAoGCCqGSM49BAMCA0gAMEUCIQCpaOLplJapBI2Nwekl9rpB\nmhoqKen7SKYc6IvYoaFm/AIgBRHxvnnzsMilc2/WLcsK12AZAjbFFuGlEp1wxU8J\nLfk=\n-----END CERTIFICATE-----\n","timestamp":"2022-11-29 11:11:20"}
+{"level":"info","message":"Successfully enrolled admin user \"admin\" and imported it into the wallet","timestamp":"2022-11-29 11:11:20"}
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-backend/wallet","timestamp":"2022-11-29 11:11:20"}
+{"level":"info","message":"identity: ","timestamp":"2022-11-29 11:11:21"}
+{"level":"info","message":"Successfully registered and enrolled admin user test5 and imported it into the wallet","timestamp":"2022-11-29 11:11:21"}
+{"level":"info","message":"-api listening on port undefined!","timestamp":"2022-11-29 11:11:21"}
+{"level":"info","message":"connect시 identityLabel: test5","timestamp":"2022-11-29 11:11:21"}
