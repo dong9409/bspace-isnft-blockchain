@@ -65,6 +65,25 @@ const ContentApi = {
       return false;
     }
   },
+
+    /**
+   * 컨텐츠 수정
+   * --
+   * @param content
+   * @returns
+   */
+     updateContentBlockchain: async (content: any) => {
+      try {
+        const { status, data } = await http.post("http://localhost:4000/mintNFT", content);
+        if (status === 200) {
+          return data;
+        }
+        throw data;
+      } catch (e) {
+        console.error(e);
+        return false;
+      }
+    },
 };
 
 export default ContentApi;

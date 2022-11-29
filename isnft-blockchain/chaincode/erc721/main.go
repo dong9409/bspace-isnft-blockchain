@@ -7,14 +7,14 @@ import (
 )
 
 func main() {
-	isNFTChaincode, err := contractapi.NewChaincode(&contract.TokenERC721Contract{})
+	erc721Chaincode, err := contractapi.NewChaincode(&contract.ERC721Contract{})
 	if err != nil {
 		logger.Error("Error creating board chaincode")
 		panic(err)
 	}
-	logger.Info("Generate ipe chaincode")
+	logger.Info("Generate erc721 chaincode")
 
-	if err := isNFTChaincode.Start(); err != nil {
+	if err := erc721Chaincode.Start(); err != nil {
 		logger.Error("Error starting board chaincode:")
 		panic(err)
 	}

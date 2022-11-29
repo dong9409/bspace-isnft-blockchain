@@ -20,4 +20,4 @@ CHANNEL=tester-channel
 
 #for chaincode, fill chaincodes with chaincode names
 CHAINCODE_DIR=/etc/hyperledger/fabric/chaincodes
-CHAINCODES=(erc721 isnft)
+CHAINCODES=(erc721 user)

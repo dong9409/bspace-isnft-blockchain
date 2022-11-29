@@ -9,7 +9,7 @@ import {
   LoadingContext,
   PinataManager,
 } from '../../../utils';
-import { connectMetamask, mintNFT } from '../../../utils/Web3Manager';
+import {  mintNFT } from '../../../utils/Web3Manager';
 
 type Props = {};
 

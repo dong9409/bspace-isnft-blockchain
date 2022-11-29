@@ -99,11 +99,6 @@ const WorkspaceContainer = (props: Props) => {
       return;
     }
     const { IpfsHash } = imgIPFSResult;
-    // const hash = crypto
-    //   .createHash('sha256')
-    //   .update(JSON.stringify(item))
-    //   .digest('hex');
-    // console.log(hash);
     const metaData: IPFSJson = {
       name: 'test',
       image: `https://gateway.pinata.cloud/ipfs/${IpfsHash}`,
@@ -129,6 +124,7 @@ const WorkspaceContainer = (props: Props) => {
       isNFT: true,
     };
     const result = await ContentApi.updateContent(putData);
+    const result2 = await ContentApi.updateContentBlockchain(putData);
     if (result) {
       handleLoading(false);
       return true;
@@ -216,9 +212,6 @@ const WorkspaceContainer = (props: Props) => {
       handlePhash();
     }
     if (current === 2) {
-      handleAiVerification();
-    }
-    if (current === 3) {
       handleUpdateVerification();
     }
   }, [current]);
@@ -235,10 +228,6 @@ const WorkspaceContainer = (props: Props) => {
     {
       title: 'Perceptual Hasing Verification',
       content: 'Second-content',
-    },
-    {
-      title: 'AI Verification',
-      content: 'Last-content',
     },
     {
       title: 'Done',
@@ -487,48 +476,6 @@ const WorkspaceContainer = (props: Props) => {
           </div>
         );
       case 2:
-        return (
-          <div
-            style={{
-              width: '100%',
-              height: '100%',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              flexDirection: 'column',
-            }}
-          >
-            {aiv ? (
-              <>
-                <Result
-                  status="success"
-                  title="Pass AI Verification!"
-                  subTitle={
-                    <>
-                      <p>Distance: {100 - aiv.distance}%</p>
-                      <p>Verify: {aiv.success ? 'Pass' : 'Fail'}</p>
-                    </>
-                  }
-                  extra={[
-                    <Button
-                      type="primary"
-                      onClick={() => next()}
-                      disabled={!img}
-                    >
-                      Next
-                    </Button>,
-                  ]}
-                />
-              </>
-            ) : (
-              <>
-                <Spin size="large" />
-                AI Model Verification...
-              </>
-            )}
-          </div>
-        );
-      case 3:
         return (
           <div
             style={{

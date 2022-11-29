@@ -1,0 +1,11 @@
+{
+    "index": {
+        "fields": [
+            {"user_nm":"desc"},
+            {"user_pw": "desc"}
+        ]
+    },
+    "ddoc": "indexUserDoc",
+    "name": "indexUser",
+    "type": "json"
+}
