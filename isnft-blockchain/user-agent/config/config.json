@@ -1,0 +1,15 @@
+{
+  "channel": "tester-channel",
+  "cc": "user",
+  "userName": "User1@btp.example.com",
+  "ccpPath": "./config/connection-profile.json",
+  "walletPath": "./wallet",
+  "msp": "btpMSP",
+  "ca": "ca.btp.example.com",
+  "pathToUser": "/crypto-config/peerOrganizations/btp.example.com/users/User1@btp.example.com",
+  "pathToUserSignCert": "/msp/signcerts/User1@serviec.example.com",
+  "privateKey": "/msp/keystore/priv_sk",
+  "identityLabel": "user1",
+  "peer": "peer0.btp.example.com",
+  "deviceName": "user1"
+}
