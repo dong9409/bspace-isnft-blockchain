@@ -9,9 +9,15 @@ import (
 )
 
 //InitLedger ...
+<<<<<<< HEAD:isnft-blockchain/chaincode/user/contract/initledger.go
 func (uc *UserChaincode) InitLedger(ctx contractapi.TransactionContextInterface) error {
 	var initData = model.User{
 		"dong9409", "김동규", "ababab", "2022-11-29", "2022-11-29", "EMAIL",
+=======
+func (ic *IsNFTChaincode) InitLedger(ctx contractapi.TransactionContextInterface) error {
+	var initData = model.Content{
+		"isnft", "id1", "title1", "desc1", "event1", "url1", "width1", "height1", "address1",
+>>>>>>> 81a35c963563d13699748ab2721e6af35e2f6d44:isnft-blockchain/chaincode/isnft/contract/initledger.go
 	}
 	initDataAsBytes, err := json.Marshal(initData)
 	ctx.GetStub().PutState("init", initDataAsBytes)
