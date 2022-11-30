@@ -51,7 +51,7 @@ func Create(ctx contractapi.TransactionContextInterface, ucr request.UserCreateR
 		return errors.New("Json encoding failed")
 	}
 
-	err = ctx.GetStub().PutPrivateData("collectionUsers", userModel.GetKey(), result)
+	err = ctx.GetStub().PutState(userModel.GetKey(), result)
 	if err != nil {
 		logger.Error(err.Error())
 		return errors.New("Putstate error")
