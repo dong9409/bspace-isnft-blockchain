@@ -553,18 +553,24 @@ type MintProps struct {
 func (c *ERC721Contract) MintWithTokenURI(ctx contractapi.TransactionContextInterface, rawMintProps string) (*Nft, error) {
 	logger.Info("===================this===================")
 	var mintProps = new(MintProps)
+	logger.Info("===================1===================")
 	err := json.Unmarshal([]byte(rawMintProps), &mintProps)
+	logger.Info("===================2===================")
 	//check if contract has been intilized first
 	initialized, err := checkInitialized(ctx)
+	logger.Info("===================3===================")
 	if err != nil {
 		return nil, fmt.Errorf("failed to check if contract ia already initialized: %v", err)
 	}
+	logger.Info("===================4===================")
 	if !initialized {
 		return nil, fmt.Errorf("Contract options need to be set before calling any function, call Initialize() to initialize contract")
 	}
+	logger.Info("===================5===================")
 
 	// Check minter authorization - this sample assumes Org1 is the issuer with privilege to mint a new token
 	clientMSPID, err := ctx.GetClientIdentity().GetMSPID()
+	logger.Info("===================6===================")
 	if err != nil {
 		return nil, fmt.Errorf("failed to get clientMSPID: %v", err)
 	}
