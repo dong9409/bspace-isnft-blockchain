@@ -71,6 +71,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
 }
 
 .add-btn .add-text{
@@ -79,6 +80,7 @@
     align-items: center;
     height: 100%;
     font-size: 1rem;
+    color: #fff;
 }
 
 .content-form{

@@ -1,6 +1,6 @@
 {
   "channel": "tester-channel",
-  "cc": "user",
+  "cc": "phash",
   "userName": "User1@btp.example.com",
   "ccpPath": "./config/connection-profile.json",
   "walletPath": "./wallet",
@@ -9,7 +9,7 @@
   "pathToUser": "/crypto-config/peerOrganizations/btp.example.com/users/User1@btp.example.com",
   "pathToUserSignCert": "/msp/signcerts/User1@serviec.example.com",
   "privateKey": "/msp/keystore/priv_sk",
-  "identityLabel": "user7",
+  "identityLabel": "user2",
   "peer": "peer0.btp.example.com",
-  "deviceName": "user7"
+  "deviceName": "user2"
 }

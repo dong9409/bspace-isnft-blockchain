@@ -75,7 +75,7 @@ const WorkspacePresenter = (props: Props) => {
 
   return (
     <div className="workspace-container">
-      <h1>MyContents</h1>
+      <h1 style={{color: "#fff"}}>MyContents</h1>
       <Divider />
       {list.length !== 0 && (
         <div className="add-btn" onClick={handleOpen}>

@@ -174,3 +174,12 @@
 {"level":"info","message":"function :","timestamp":"2022-11-30 01:50:00"}
 {"level":"info","message":{"approved":"","owner":"x509::CN=test14,OU=client+OU=btp+OU=example+OU=com+OU=user::CN=ca.btp.example.com,OU=btp,O=btp.example.com,L=San Francisco,ST=California,C=KR","tokenId":"6b21594a-4bae-456d-92ee-06684cafb4dc","tokenURI":"QmaCEe4Kvuxepfy7YwqfyRzV7SxCvrxPDCaKksmffnMdnK"},"timestamp":"2022-11-30 01:50:00"}
 {"level":"error","message":"Caught interrupt signal - start disconnect from the gateway","timestamp":"2022-11-30 01:50:24"}
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-blockchain/isnft-agent/wallet","timestamp":"2022-11-30 13:51:57"}
+{"level":"info","message":"-----BEGIN CERTIFICATE-----\nMIICDTCCAbSgAwIBAgIUSk2Vq22wlijTL3qRukLTB/dtOBUwCgYIKoZIzj0EAwIw\nfzELMAkGA1UEBhMCS1IxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNh\nbiBGcmFuY2lzY28xGDAWBgNVBAoTD2J0cC5leGFtcGxlLmNvbTEMMAoGA1UECxMD\nYnRwMRswGQYDVQQDExJjYS5idHAuZXhhbXBsZS5jb20wHhcNMjIxMTMwMDQ0NzAw\nWhcNMjMxMTMwMDQ1MjAwWjAhMQ8wDQYDVQQLEwZjbGllbnQxDjAMBgNVBAMTBWFk\nbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEQy98u5++eM874CxnEwgRsZen\ngNndEM1DCFTGd0ufJfRmjperwp66Aoke/ovrKB8TlD+JCtWDpj9dYnCbpEL6UaNs\nMGowDgYDVR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFGUo91PA\nTtmoHv+pTnzk8qr/sx8uMCsGA1UdIwQkMCKAIDOMXO7D3Qg74rzB7unD50rvrTkx\nUb81HSvyG/Ioay6kMAoGCCqGSM49BAMCA0cAMEQCIFkiAGUfi56JTuYIh6CQjSfI\ni3AmROQNTAkzGv/Qs9zGAiAEdU383KlJ/tA7LLOq9JPY0tM+cgkK/fjshwVvBSI4\nMg==\n-----END CERTIFICATE-----\n","timestamp":"2022-11-30 13:51:57"}
+{"level":"info","message":"Successfully enrolled admin user \"admin\" and imported it into the wallet","timestamp":"2022-11-30 13:51:57"}
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-blockchain/isnft-agent/wallet","timestamp":"2022-11-30 13:51:57"}
+{"level":"info","message":"identity: ","timestamp":"2022-11-30 13:51:58"}
+{"level":"info","message":"Successfully registered and enrolled admin user test14 and imported it into the wallet","timestamp":"2022-11-30 13:51:58"}
+{"level":"info","message":"-api listening on port 4000!","timestamp":"2022-11-30 13:51:58"}
+{"level":"info","message":"connect시 identityLabel: test14","timestamp":"2022-11-30 13:51:58"}
+{"level":"error","message":"Caught interrupt signal - start disconnect from the gateway","timestamp":"2022-11-30 13:54:26"}

@@ -1,0 +1,10 @@
+{
+    "index": {
+        "fields": [
+            {"phash":"desc"}
+        ]
+    },
+    "ddoc": "indexPhashDoc",
+    "name": "indexPhash",
+    "type": "json"
+}

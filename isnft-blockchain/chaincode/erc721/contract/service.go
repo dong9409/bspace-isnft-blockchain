@@ -544,6 +544,14 @@ func (c *ERC721Contract) Initialize(ctx contractapi.TransactionContextInterface,
 // param {String} tokenURI URI containing metadata of the minted non-fungible token
 // returns {Object} Return the non-fungible token object
 
+// MintProps ...
+type MintProps struct {
+	TokenId  string `json:"tokenId"`
+	Owner    string `json:"owner"`
+	TokenURI string `json:"tokenURI"`
+	Approved string `json:"approved"`
+}
+
 func (c *ERC721Contract) MintWithTokenURI(ctx contractapi.TransactionContextInterface, tokenId string, tokenURI string) (*Nft, error) {
 
 	//check if contract has been intilized first

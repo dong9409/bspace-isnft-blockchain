@@ -9,6 +9,36 @@ contractRouter(config).then((connection) => {
     gateway = connection.gateway;
     contract = connection.contract;
 
+    router.post("/createPhash", async(request, response) => {
+        try{
+            const requestData = JSON.stringify(request.body);
+            const userData = {...request.body};
+            console.log(userData);
+            const bufferedData = await contract.submitTransaction("CreatePhashData", JSON.stringify(userData));
+            const jsonData = JSON.parse(String(bufferedData));
+            logger.info(jsonData);
+            response.send(jsonData);
+        } catch(e) {
+            console.error(e);
+            response.send("error");
+        }
+    });
+    router.post("/getPhash", async(request, response) => {
+        try{
+            const requestData = JSON.stringify(request.body);
+            const userData = {...request.body, created_at: String(Date.now()), modified_at: String(Date.now())};
+            console.log(userData)
+            const bufferedData = await contract.submitTransaction("GetPhashList");
+            const jsonData = JSON.parse(String(bufferedData));
+            logger.info(jsonData);
+            response.send(jsonData);
+        } catch(e) {
+            console.error(e);
+            response.send("error");
+        }
+    });
+
+
     router.post("/signup", async(request, response) => {
         try{
             const requestData = JSON.stringify(request.body);

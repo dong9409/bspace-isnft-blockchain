@@ -7,3 +7,21 @@ html, body, #root{
   width: 100%;
   height: 100%;
 }
+
+.ant-result-title {
+  color: aliceblue !important;
+}
+
+.perceptual .ant-result-title {
+  color: #000 !important;
+}
+
+
+.verify .ant-result-title {
+  color: #000 !important;
+}
+
+
+.ant-typography {
+  color: aliceblue !important;
+}

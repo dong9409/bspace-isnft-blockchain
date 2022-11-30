@@ -38,6 +38,7 @@ const ListItem = (props: Props) => {
       ...content,
       thumbnail: img,
     };
+    handleVerify();
     mint(postData);
   };
 
@@ -105,12 +106,12 @@ const ListItem = (props: Props) => {
         </Typography>
         <Space className="bnt-list">
           <Button onClick={handleMove}>수정하기</Button>
-          <Button disabled={isNFT} onClick={handleMint}>
-            발급하기
-          </Button>
-          {isNFT && <Button onClick={handleJson}>메타데이터 내려받기</Button>}
-          <Button disabled={isVerify} onClick={handleVerify}>
-            검증하기
+          <Button disabled={isNFT} onClick={handleMint} style={{
+            backgroundColor: !isNFT ? undefined: "#007BFF",
+            color: !isNFT ? undefined: "#fff",
+            border: undefined,
+          }}>
+            {isNFT ? "발급완료": "발급하기"}
           </Button>
           {/* <Button>다운받기</Button> */}
         </Space>

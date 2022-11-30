@@ -203,28 +203,19 @@ const WorkspaceContainer = (props: Props) => {
     handleContent();
   }, [userInfo]);
 
-  useLayoutEffect(() => {
-    createThumbnail();
-  }, [metadata]);
 
   useLayoutEffect(() => {
-    if (current === 1) {
+    if (current === 0) {
       handlePhash();
     }
-    if (current === 2) {
-      handleUpdateVerification();
+    if (current === 1) {
+      // handleUpdateVerification();
     }
   }, [current]);
 
   /* Render */
 
   const steps = [
-    {
-      title: 'Check Metadata',
-      content: () => {
-        return <div>1</div>;
-      },
-    },
     {
       title: 'Perceptual Hasing Verification',
       content: 'Second-content',
@@ -277,29 +268,16 @@ const WorkspaceContainer = (props: Props) => {
   };
 
   const handlePhash = async () => {
-    var blobBin = atob(img.split(',')[1]);
-    var array = [];
-    for (var i = 0; i < blobBin.length; i++) {
-      array.push(blobBin.charCodeAt(i));
-    }
-    var tempBlob = new Blob([new Uint8Array(array)], { type: 'image/png' });
-    // console.log(tempBlob);
-    // console.log(img);
-    // const _img = img.replace('data:image/png;base64,', '');
-    const formData = new FormData();
-    // formData.append('file', _img);
-    formData.append('file', tempBlob);
-    formData.append(
-      'content_url',
-      `https://gateway.pinata.cloud/ipfs/${metadata.content_url}`
-    );
-    const result = await VerificationApi.verification(formData);
-    if (result) {
-      // next();
-      setPhash(result);
-      return;
-    }
-    return false;
+    console.log("hi=====================")
+    setTimeout(() => {
+      setPhash({
+        distance: 0,
+        diff: 0,
+        verify: 'fail',
+      });
+      return true;
+    }, 3000)
+    return true;
   };
 
   const handleAiVerification = async () => {
@@ -357,84 +335,7 @@ const WorkspaceContainer = (props: Props) => {
       case 0:
         return (
           <div
-            style={{
-              width: '100%',
-              height: '100%',
-              display: 'flex',
-              justifyContent: 'center',
-              alignContent: 'center',
-            }}
-          >
-            {metadata ? (
-              <div
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignContent: 'center',
-                  flexDirection: 'column',
-                }}
-              >
-                <div
-                  style={{
-                    width: '100%',
-                    height: '90%',
-                    display: 'flex',
-                    justifyContent: 'space-evenly',
-                    alignContent: 'center',
-                  }}
-                >
-                  <pre
-                    style={{
-                      display: 'block',
-                      width: '48%',
-                      height: '100%',
-                      padding: ' 10px 30px',
-                      margin: '0',
-                      overflow: 'scroll',
-                      border: '1px solid lightgray',
-                    }}
-                  >
-                    {JSON.stringify(metadata, null, 2)}
-                  </pre>
-                  <img
-                    src={img}
-                    alt="igm"
-                    style={{
-                      width: '48%',
-                      height: '100%',
-                      objectFit: 'contain',
-                      border: '1px solid lightgray',
-                    }}
-                  />
-                  <canvas
-                    ref={canvasRef}
-                    style={{ position: 'fixed', top: '-100%' }}
-                  />
-                </div>
-                <div
-                  style={{
-                    width: '100%',
-                    height: '10%',
-                    display: 'flex',
-                    justifyContent: 'flex-end',
-                    alignItems: 'center',
-                  }}
-                >
-                  <Button type="primary" onClick={() => next()} disabled={!img}>
-                    Next
-                  </Button>
-                </div>
-              </div>
-            ) : (
-              <EventMeta loadJson={handleMetadata} />
-            )}
-          </div>
-        );
-      case 1:
-        return (
-          <div
+          className='perceptual'
             style={{
               width: '100%',
               height: '100%',
@@ -460,7 +361,6 @@ const WorkspaceContainer = (props: Props) => {
                     <Button
                       type="primary"
                       onClick={() => next()}
-                      disabled={!img}
                     >
                       Next
                     </Button>,
@@ -475,9 +375,10 @@ const WorkspaceContainer = (props: Props) => {
             )}
           </div>
         );
-      case 2:
+      case 1:
         return (
           <div
+            className='verify'
             style={{
               width: '100%',
               height: '100%',

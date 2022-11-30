@@ -245,3 +245,54 @@
 {"level":"info","message":"connect시 identityLabel: user7","timestamp":"2022-11-30 01:47:46"}
 {"data":"{\"user_id\":\"asdf\",\"user_nm\":\"asdf\",\"user_pw\":\"asdf\",\"user_type\":\"EMAIL\",\"created_at\":\"1669740490994\",\"modified_at\":\"1669740490994\"}","level":"info","message":"OK","status_code":200,"timestamp":"2022-11-30 01:48:13"}
 {"data":"{\"user_id\":\"asdf\"}","level":"info","message":"OK","status_code":200,"timestamp":"2022-11-30 01:49:28"}
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-blockchain/user-agent/wallet","timestamp":"2022-11-30 13:54:43"}
+{"level":"info","message":"-----BEGIN CERTIFICATE-----\nMIICDjCCAbSgAwIBAgIUOg/IKQhFltDqADeGCXXAsV1or+wwCgYIKoZIzj0EAwIw\nfzELMAkGA1UEBhMCS1IxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNh\nbiBGcmFuY2lzY28xGDAWBgNVBAoTD2J0cC5leGFtcGxlLmNvbTEMMAoGA1UECxMD\nYnRwMRswGQYDVQQDExJjYS5idHAuZXhhbXBsZS5jb20wHhcNMjIxMTMwMDQ1MDAw\nWhcNMjMxMTMwMDQ1NTAwWjAhMQ8wDQYDVQQLEwZjbGllbnQxDjAMBgNVBAMTBWFk\nbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0Wi01E9SH7naNwYE27OXtW2J\n5pcZST4hl5M4MN62u4um9h8cRlDyk087fIDMHuihwotufyxOyZ2BEdkhDXFEeaNs\nMGowDgYDVR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFJPFSmw/\nB7RMtSwj6SPCoojyoqBXMCsGA1UdIwQkMCKAIDOMXO7D3Qg74rzB7unD50rvrTkx\nUb81HSvyG/Ioay6kMAoGCCqGSM49BAMCA0gAMEUCIQCeSFn2YrKWkO8uW8jr2Y/0\nodgY+JqiNb/nGtJwkb8xBwIgeCq6PdQUPKEFJ9I1y1nzMdSGLp1KhdxCoB721yxw\nppc=\n-----END CERTIFICATE-----\n","timestamp":"2022-11-30 13:54:44"}
+{"level":"info","message":"Successfully enrolled admin user \"admin\" and imported it into the wallet","timestamp":"2022-11-30 13:54:44"}
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-blockchain/user-agent/wallet","timestamp":"2022-11-30 13:54:45"}
+{"level":"info","message":"identity: ","timestamp":"2022-11-30 13:54:45"}
+{"level":"info","message":"Successfully registered and enrolled admin user user7 and imported it into the wallet","timestamp":"2022-11-30 13:54:45"}
+{"level":"info","message":"-api listening on port 4001!","timestamp":"2022-11-30 13:54:46"}
+{"level":"info","message":"connect시 identityLabel: user7","timestamp":"2022-11-30 13:54:46"}
+{"level":"error","message":"Caught interrupt signal - start disconnect from the gateway","timestamp":"2022-11-30 13:56:25"}
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-blockchain/user-agent/wallet","timestamp":"2022-11-30 13:56:30"}
+{"level":"info","message":"-----BEGIN CERTIFICATE-----\nMIICDTCCAbSgAwIBAgIUBqAWl6zkJVykEfIl6x6LO2yrZcswCgYIKoZIzj0EAwIw\nfzELMAkGA1UEBhMCS1IxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNh\nbiBGcmFuY2lzY28xGDAWBgNVBAoTD2J0cC5leGFtcGxlLmNvbTEMMAoGA1UECxMD\nYnRwMRswGQYDVQQDExJjYS5idHAuZXhhbXBsZS5jb20wHhcNMjIxMTMwMDQ1MjAw\nWhcNMjMxMTMwMDQ1NzAwWjAhMQ8wDQYDVQQLEwZjbGllbnQxDjAMBgNVBAMTBWFk\nbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEcxCFyWFnda1Byji/SMKahHBS\nVuuRKYcpPoy27N185iK+AYp0y7NAK/QXmWtxFGruo9QLQYKGOhFugFnt7xyLFaNs\nMGowDgYDVR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFGa7Ma3o\nw2c0GgR2+mteTms0DDCZMCsGA1UdIwQkMCKAIDOMXO7D3Qg74rzB7unD50rvrTkx\nUb81HSvyG/Ioay6kMAoGCCqGSM49BAMCA0cAMEQCIGNz9TnaodTwTG57/5hq+hu7\na60ysgIBWjhnIFi72QTrAiAjppzpT9HcW8uvEG35WijPm5F4WUPU3R3InWfyWjrU\ntw==\n-----END CERTIFICATE-----\n","timestamp":"2022-11-30 13:56:30"}
+{"level":"info","message":"Successfully enrolled admin user \"admin\" and imported it into the wallet","timestamp":"2022-11-30 13:56:30"}
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-blockchain/user-agent/wallet","timestamp":"2022-11-30 13:56:31"}
+{"level":"info","message":"identity: ","timestamp":"2022-11-30 13:56:31"}
+{"level":"info","message":"Successfully registered and enrolled admin user user1 and imported it into the wallet","timestamp":"2022-11-30 13:56:31"}
+{"level":"info","message":"-api listening on port 4001!","timestamp":"2022-11-30 13:56:32"}
+{"level":"info","message":"connect시 identityLabel: user1","timestamp":"2022-11-30 13:56:32"}
+{"data":"{\"content_id\":\"asdf\",\"phash\":\"asdfawefwef\"}","level":"info","message":"There is no [phash]","status_code":500,"timestamp":"2022-11-30 13:56:36"}
+{"level":"error","message":"Caught interrupt signal - start disconnect from the gateway","timestamp":"2022-11-30 13:57:53"}
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-blockchain/user-agent/wallet","timestamp":"2022-11-30 13:57:59"}
+{"level":"info","message":"-----BEGIN CERTIFICATE-----\nMIICDTCCAbSgAwIBAgIUbQBSna1wjELzjhmAIgr3V8m3XLYwCgYIKoZIzj0EAwIw\nfzELMAkGA1UEBhMCS1IxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNh\nbiBGcmFuY2lzY28xGDAWBgNVBAoTD2J0cC5leGFtcGxlLmNvbTEMMAoGA1UECxMD\nYnRwMRswGQYDVQQDExJjYS5idHAuZXhhbXBsZS5jb20wHhcNMjIxMTMwMDQ1MzAw\nWhcNMjMxMTMwMDQ1ODAwWjAhMQ8wDQYDVQQLEwZjbGllbnQxDjAMBgNVBAMTBWFk\nbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEgD+mgzfX0G4YH6/d91cmfSxi\n9fytTCgPyb+OX383pS1lCm0yOGrVb6GhSJRgra+7Zo5o7/OaxN1zaZGnD51nsaNs\nMGowDgYDVR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFOzk00wR\nipec+yYwI+Pm8Yk/HxkwMCsGA1UdIwQkMCKAIDOMXO7D3Qg74rzB7unD50rvrTkx\nUb81HSvyG/Ioay6kMAoGCCqGSM49BAMCA0cAMEQCIHtQDSN2FCneuFT3nqimcZvs\nUwriW972bWN6zCE+7ryzAiBUYyuPvGRN81b6M68GOeYl/T1tyTlFq0mfDzwcZJX7\ntQ==\n-----END CERTIFICATE-----\n","timestamp":"2022-11-30 13:58:00"}
+{"level":"info","message":"Successfully enrolled admin user \"admin\" and imported it into the wallet","timestamp":"2022-11-30 13:58:00"}
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-blockchain/user-agent/wallet","timestamp":"2022-11-30 13:58:00"}
+{"level":"info","message":"identity: ","timestamp":"2022-11-30 13:58:01"}
+{"level":"info","message":"Successfully registered and enrolled admin user user2 and imported it into the wallet","timestamp":"2022-11-30 13:58:01"}
+{"level":"info","message":"-api listening on port 4001!","timestamp":"2022-11-30 13:58:02"}
+{"level":"info","message":"connect시 identityLabel: user2","timestamp":"2022-11-30 13:58:02"}
+{"data":"{\"content_id\":\"asdf\",\"phash\":\"asdfawefwef\"}","level":"info","message":"There is no [phash]","status_code":500,"timestamp":"2022-11-30 13:58:08"}
+{"level":"error","message":"Caught interrupt signal - start disconnect from the gateway","timestamp":"2022-11-30 14:04:02"}
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-blockchain/user-agent/wallet","timestamp":"2022-11-30 14:04:04"}
+{"level":"info","message":"-----BEGIN CERTIFICATE-----\nMIICDjCCAbSgAwIBAgIUPAIOJHA6VtXStMfKquTwVofzXb8wCgYIKoZIzj0EAwIw\nfzELMAkGA1UEBhMCS1IxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNh\nbiBGcmFuY2lzY28xGDAWBgNVBAoTD2J0cC5leGFtcGxlLmNvbTEMMAoGA1UECxMD\nYnRwMRswGQYDVQQDExJjYS5idHAuZXhhbXBsZS5jb20wHhcNMjIxMTMwMDQ1OTAw\nWhcNMjMxMTMwMDUwNDAwWjAhMQ8wDQYDVQQLEwZjbGllbnQxDjAMBgNVBAMTBWFk\nbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEyE88agTmz1xeaCv8QXhd9+wk\nit4L1Ml5uFBxt8J3WxDyhvgxhp/UpIXSzZWBH2zcLFNHWZjq7/iarT502YJyu6Ns\nMGowDgYDVR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFKzPiij+\nLe9HPKWiq/y/ssSp97DjMCsGA1UdIwQkMCKAIDHeRLOJhZhYLe0IDnYC6iv7tikW\nYtwfy23bXp9WqAsAMAoGCCqGSM49BAMCA0gAMEUCIQC75QauQN3XkM+YhJpJV8Ko\neUYfcIkIu7n+q955j2LElwIgetFRbKLf4s3u25LepIXivIpo0p4PbNmdKr4WRgTJ\nyCo=\n-----END CERTIFICATE-----\n","timestamp":"2022-11-30 14:04:04"}
+{"level":"info","message":"Successfully enrolled admin user \"admin\" and imported it into the wallet","timestamp":"2022-11-30 14:04:04"}
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-blockchain/user-agent/wallet","timestamp":"2022-11-30 14:04:05"}
+{"level":"info","message":"identity: ","timestamp":"2022-11-30 14:04:05"}
+{"level":"info","message":"Successfully registered and enrolled admin user user2 and imported it into the wallet","timestamp":"2022-11-30 14:04:05"}
+{"level":"info","message":"-api listening on port 4001!","timestamp":"2022-11-30 14:04:06"}
+{"level":"info","message":"connect시 identityLabel: user2","timestamp":"2022-11-30 14:04:06"}
+{"data":"{\"content_id\":\"asdf\",\"phash\":\"asdfawefwef\"}","level":"info","message":"OK","status_code":200,"timestamp":"2022-11-30 14:04:10"}
+{"data":"","level":"info","message":"iterator 정보를 가져오는데 실패함","status_code":500,"timestamp":"2022-11-30 14:04:36"}
+{"level":"error","message":"Caught interrupt signal - start disconnect from the gateway","timestamp":"2022-11-30 14:07:15"}
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-blockchain/user-agent/wallet","timestamp":"2022-11-30 14:07:16"}
+{"level":"info","message":"-----BEGIN CERTIFICATE-----\nMIICDTCCAbSgAwIBAgIUQbphCJYOA5IafrG5TfW70MTWWkQwCgYIKoZIzj0EAwIw\nfzELMAkGA1UEBhMCS1IxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNh\nbiBGcmFuY2lzY28xGDAWBgNVBAoTD2J0cC5leGFtcGxlLmNvbTEMMAoGA1UECxMD\nYnRwMRswGQYDVQQDExJjYS5idHAuZXhhbXBsZS5jb20wHhcNMjIxMTMwMDUwMjAw\nWhcNMjMxMTMwMDUwNzAwWjAhMQ8wDQYDVQQLEwZjbGllbnQxDjAMBgNVBAMTBWFk\nbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE3Ps7MXCRLoh6l6BEM/q7RoDL\nghbztJl8pKUh5cHgcSaJwlZYVKjphbji74WwXSAfflt6KCZMNNNt2jA/Ce1lBqNs\nMGowDgYDVR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFNYGUdnw\nQzcgXFmID3qBEZJFMSMyMCsGA1UdIwQkMCKAIJm1FTY2BTyHAyAzLN8g897r3f5G\nxtBzN+OnvN0XQptZMAoGCCqGSM49BAMCA0cAMEQCIFMj4hhXYm7EwDhAQzeDEbNg\nM0k5i+fB00MRH/J1MtEVAiA7VlbQ8TccFWFU12wZf7FnCrWH0KLSSSAJLMa7DQkN\n2A==\n-----END CERTIFICATE-----\n","timestamp":"2022-11-30 14:07:17"}
+{"level":"info","message":"Successfully enrolled admin user \"admin\" and imported it into the wallet","timestamp":"2022-11-30 14:07:17"}
+{"level":"info","message":"Wallet path: /home/ubuntu/go/src/github.com/bspace-isnft-blockchain/isnft-blockchain/user-agent/wallet","timestamp":"2022-11-30 14:07:18"}
+{"level":"info","message":"identity: ","timestamp":"2022-11-30 14:07:18"}
+{"level":"info","message":"Successfully registered and enrolled admin user user2 and imported it into the wallet","timestamp":"2022-11-30 14:07:18"}
+{"level":"info","message":"-api listening on port 4001!","timestamp":"2022-11-30 14:07:19"}
+{"level":"info","message":"connect시 identityLabel: user2","timestamp":"2022-11-30 14:07:19"}
+{"data":"{\"content_id\":\"asdf\",\"phash\":\"asdfawefwef\"}","level":"info","message":"OK","status_code":200,"timestamp":"2022-11-30 14:07:26"}
+{"data":"","level":"info","message":"OK","status_code":200,"timestamp":"2022-11-30 14:07:30"}
+{"level":"error","message":"Caught interrupt signal - start disconnect from the gateway","timestamp":"2022-11-30 14:10:21"}
