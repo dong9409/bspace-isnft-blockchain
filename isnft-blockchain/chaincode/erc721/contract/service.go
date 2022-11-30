@@ -551,6 +551,7 @@ type MintProps struct {
 }
 
 func (c *ERC721Contract) MintWithTokenURI(ctx contractapi.TransactionContextInterface, rawMintProps string) (*Nft, error) {
+	logger.Info("===================this===================")
 	var mintProps = new(MintProps)
 	err := json.Unmarshal([]byte(rawMintProps), &mintProps)
 	//check if contract has been intilized first
