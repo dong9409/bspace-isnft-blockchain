@@ -14,7 +14,7 @@ contractRouter(config).then((connection) => {
             const requestData = JSON.stringify(request.body);
             const {content_id, content_url} = request.body;
             console.log(1);
-            const bufferedData = await contract.submitTransaction("MintWithTokenURI", content_id, content_url);
+            const bufferedData = await contract.submitTransaction("MintWithTokenURI", requestData);
             console.log(2);
             const jsonData = JSON.parse(String(bufferedData));
             console.log(3);

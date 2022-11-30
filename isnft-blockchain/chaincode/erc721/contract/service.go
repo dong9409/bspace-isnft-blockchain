@@ -546,14 +546,13 @@ func (c *ERC721Contract) Initialize(ctx contractapi.TransactionContextInterface,
 
 // MintProps ...
 type MintProps struct {
-	TokenId  string `json:"tokenId"`
-	Owner    string `json:"owner"`
-	TokenURI string `json:"tokenURI"`
-	Approved string `json:"approved"`
+	tokenId  string `json:"token_id"`
+	tokenURI string `json:"token_uri"`
 }
 
-func (c *ERC721Contract) MintWithTokenURI(ctx contractapi.TransactionContextInterface, tokenId string, tokenURI string) (*Nft, error) {
-
+func (c *ERC721Contract) MintWithTokenURI(ctx contractapi.TransactionContextInterface, rawMintProps string) (*Nft, error) {
+	var mintProps = new(MintProps)
+	err := json.Unmarshal([]byte(rawMintProps), &mintProps)
 	//check if contract has been intilized first
 	initialized, err := checkInitialized(ctx)
 	if err != nil {
@@ -570,7 +569,7 @@ func (c *ERC721Contract) MintWithTokenURI(ctx contractapi.TransactionContextInte
 	}
 	logger.Info(clientMSPID)
 
-	if clientMSPID != "edu-org1MSP" {
+	if clientMSPID != "edu-or1MSP" {
 		return nil, fmt.Errorf("client is not authorized to set the name and symbol of the token")
 	}
 
@@ -587,18 +586,18 @@ func (c *ERC721Contract) MintWithTokenURI(ctx contractapi.TransactionContextInte
 	minter := string(minterBytes)
 
 	// Check if the token to be minted does not exist
-	exists := _nftExists(ctx, tokenId)
+	exists := _nftExists(ctx, mintProps.tokenId)
 	if exists {
-		return nil, fmt.Errorf("the token %s is already minted.: %v", tokenId, err)
+		return nil, fmt.Errorf("the token %s is already minted.: %v", mintProps.tokenId, err)
 	}
 
 	// Add a non-fungible token
 	nft := new(Nft)
-	nft.TokenId = tokenId
+	nft.TokenId = mintProps.tokenId
 	nft.Owner = minter
-	nft.TokenURI = tokenURI
+	nft.TokenURI = mintProps.tokenURI
 
-	nftKey, err := ctx.GetStub().CreateCompositeKey(nftPrefix, []string{tokenId})
+	nftKey, err := ctx.GetStub().CreateCompositeKey(nftPrefix, []string{mintProps.tokenId})
 	if err != nil {
 		return nil, fmt.Errorf("failed to CreateCompositeKey to nftKey: %v", err)
 	}
@@ -617,7 +616,7 @@ func (c *ERC721Contract) MintWithTokenURI(ctx contractapi.TransactionContextInte
 	// composite key query to find and count all records matching balance.owner.*
 	// An empty value would represent a delete, so we simply insert the null character.
 
-	balanceKey, err := ctx.GetStub().CreateCompositeKey(balancePrefix, []string{minter, tokenId})
+	balanceKey, err := ctx.GetStub().CreateCompositeKey(balancePrefix, []string{minter, mintProps.tokenId})
 	if err != nil {
 		return nil, fmt.Errorf("failed to CreateCompositeKey to balanceKey: %v", err)
 	}
@@ -631,7 +630,7 @@ func (c *ERC721Contract) MintWithTokenURI(ctx contractapi.TransactionContextInte
 	transferEvent := new(Transfer)
 	transferEvent.From = "0x0"
 	transferEvent.To = minter
-	transferEvent.TokenId = tokenId
+	transferEvent.TokenId = mintProps.tokenId
 
 	transferEventBytes, err := json.Marshal(transferEvent)
 	if err != nil {
